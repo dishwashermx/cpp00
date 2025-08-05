@@ -6,7 +6,7 @@
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 11:10:12 by ghwa              #+#    #+#             */
-/*   Updated: 2024/08/29 10:45:59 by ghwa             ###   ########.fr       */
+/*   Updated: 2025/08/05 15:26:18 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 
 PhoneBook::PhoneBook() {
-
+	this->oldestIndex = 0;
 }
 
 PhoneBook::~PhoneBook() {
@@ -59,7 +59,7 @@ void PhoneBook::searchContact() const {
 				std::cout << "Phone Number: " << contacts[intIndex].getPhoneNumber() << std::endl;
 				std::cout << "Darkest Secret: " << contacts[intIndex].getDarkestSecret() << std::endl;
 			}
-			else 
+			else
 				std::cout << "Invalid index. Please try again." << std::endl;
 		}
 		else
@@ -69,7 +69,7 @@ void PhoneBook::searchContact() const {
 
 std::string PhoneBook::truncateText(const std::string& text) const {
 	std::stringstream string;
-	if (text.length() < 9) 
+	if (text.length() < 9)
 		string << std::setw(10) << std::right << text;
 	else
 		string << text.substr(0, 9) + ".";

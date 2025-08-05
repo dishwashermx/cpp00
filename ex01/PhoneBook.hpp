@@ -6,7 +6,7 @@
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 13:51:03 by ghwa              #+#    #+#             */
-/*   Updated: 2024/08/29 10:50:02 by ghwa             ###   ########.fr       */
+/*   Updated: 2025/08/05 15:26:06 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,13 @@ class PhoneBook {
 	public:
 		PhoneBook();
 		~PhoneBook();
-		
+
 		void addContact(const Contact& contact);
 		void displayContacts() const;
 		void searchContact() const;
-		
+
 	private:
 		std::vector<Contact> contacts;
-		int	oldestIndex = 0;
+		int	oldestIndex;
 		std::string truncateText(const std::string& text) const;
 } ;
