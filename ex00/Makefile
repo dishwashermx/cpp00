@@ -10,6 +10,9 @@ $(NAME): megaphone.cpp
 clean:
 	rm -f $(NAME)
 
-re: clean all
+fclean: clean
+	rm -f $(OBJS)
 
-.PHONY: all clean re
+re: fclean all
+
+.PHONY: all clean re fclean

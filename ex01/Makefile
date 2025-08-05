@@ -6,7 +6,7 @@
 #    By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/05 11:08:12 by ghwa              #+#    #+#              #
-#    Updated: 2025/08/05 15:17:53 by ghwa             ###   ########.fr        #
+#    Updated: 2025/08/05 15:36:40 by ghwa             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,4 +33,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean re
+.PHONY: all clean re fclean
