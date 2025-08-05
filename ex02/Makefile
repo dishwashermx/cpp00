@@ -6,12 +6,12 @@
 #    By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/05 11:08:12 by ghwa              #+#    #+#              #
-#    Updated: 2025/08/05 16:10:28 by ghwa             ###   ########.fr        #
+#    Updated: 2025/08/05 16:46:56 by ghwa             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = c++
-FLAGS = -Wall -Werror -Wextra -fsanitize=address -std=c++98
+FLAGS = -Wall -Werror -Wextra -std=c++98
 
 SRCS = Account.cpp tests.cpp
 OBJS = $(SRCS:.cpp=.o)
